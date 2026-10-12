@@ -1,0 +1,5 @@
+Model,MAE (GWh),RMSE (GWh),MAPE (%),R2 Score
+Random Forest,24.942,45.941,1.908,0.9178
+Linear Regression,34.047,55.959,2.58,0.8781
+LSTM Network,55.065,76.932,4.083,0.7695
+Persistence,102.04,149.474,7.761,0.13

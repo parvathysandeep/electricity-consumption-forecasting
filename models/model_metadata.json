@@ -1,0 +1,40 @@
+{
+    "dataset_name": "Open Power System Data (Germany Daily Consumption)",
+    "target_variable": "Consumption (GWh)",
+    "lookback_window_n_steps": 14,
+    "epochs_trained": 35,
+    "batch_size": 32,
+    "train_samples": 3054,
+    "val_samples": 657,
+    "test_samples": 656,
+    "metrics_summary": [
+        {
+            "Model": "Random Forest",
+            "MAE (GWh)": 24.942,
+            "RMSE (GWh)": 45.941,
+            "MAPE (%)": 1.908,
+            "R2 Score": 0.9178
+        },
+        {
+            "Model": "Linear Regression",
+            "MAE (GWh)": 34.047,
+            "RMSE (GWh)": 55.959,
+            "MAPE (%)": 2.58,
+            "R2 Score": 0.8781
+        },
+        {
+            "Model": "LSTM Network",
+            "MAE (GWh)": 55.065,
+            "RMSE (GWh)": 76.932,
+            "MAPE (%)": 4.083,
+            "R2 Score": 0.7695
+        },
+        {
+            "Model": "Persistence",
+            "MAE (GWh)": 102.04,
+            "RMSE (GWh)": 149.474,
+            "MAPE (%)": 7.761,
+            "R2 Score": 0.13
+        }
+    ]
+}
